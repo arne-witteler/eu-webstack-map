@@ -1,0 +1,178 @@
+[
+  {
+    "id": "zentauron",
+    "name": "Zentauron",
+    "country": "DE",
+    "city": "Bad Salzuflen",
+    "location": { "lat": 52.087, "lng": 8.746 },
+    "website": "https://www.zentauron.de",
+    "categories": ["bags", "technical-textiles"],
+    "products": ["gear bags", "carrying cases", "protective covers", "strap systems"],
+    "materials": ["CORDURA", "technical fabrics"],
+    "services": {
+      "privateLabel": null,
+      "contractManufacturing": true,
+      "prototyping": true
+    },
+    "smallBatches": true,
+    "moq": null,
+    "certifications": [],
+    "sources": ["https://www.zentauron.de/en/content/71-manufacture-and-wholesale-sewing"],
+    "lastVerified": "2026-11",
+    "notes": "Keine allgemeine Mindestmenge, Prüfung je Projekt."
+  },
+  {
+    "id": "marts-bags",
+    "name": "Marts Bags",
+    "country": "PL",
+    "city": null,
+    "location": null,
+    "website": "https://martsbags.com",
+    "categories": ["bags"],
+    "products": ["tote bags", "pouches", "reusable bags"],
+    "materials": ["organic cotton", "recycled cotton"],
+    "services": {
+      "privateLabel": true,
+      "contractManufacturing": true,
+      "prototyping": null
+    },
+    "smallBatches": true,
+    "moq": { "value": 100, "unit": "pieces" },
+    "certifications": ["OEKO-TEX Standard 100", "Fairtrade Cotton"],
+    "sources": ["https://wonnda.com/suppliers/marts-bags/"],
+    "lastVerified": "2026-11",
+    "notes": "Stadt fehlt noch – auf der Website prüfen."
+  },
+  {
+    "id": "wisport",
+    "name": "Wisport",
+    "country": "PL",
+    "city": null,
+    "location": null,
+    "website": null,
+    "categories": ["bags", "outdoor"],
+    "products": ["trekking backpacks", "military backpacks", "city backpacks"],
+    "materials": [],
+    "services": {
+      "privateLabel": null,
+      "contractManufacturing": null,
+      "prototyping": null
+    },
+    "smallBatches": null,
+    "moq": null,
+    "certifications": [],
+    "sources": ["https://kapuga.pl/en/wisport-2"],
+    "lastVerified": "2026-11",
+    "notes": "Eigene Marke mit Produktion in Polen seit 1984. Ob sie für andere Marken fertigen, ist unklar – anfragen."
+  },
+  {
+    "id": "tebesa",
+    "name": "Tebesa UAB",
+    "country": "LT",
+    "city": "Kaunas",
+    "location": { "lat": 54.898, "lng": 23.904 },
+    "website": "https://tebesa.lt",
+    "categories": ["apparel", "knitwear"],
+    "products": ["knitwear", "women's clothing", "accessories"],
+    "materials": [],
+    "services": {
+      "privateLabel": true,
+      "contractManufacturing": true,
+      "prototyping": null
+    },
+    "smallBatches": null,
+    "moq": null,
+    "certifications": [],
+    "sources": ["https://wonnda.com/suppliers/tebesa-uab/"],
+    "lastVerified": "2026-11",
+    "notes": ""
+  },
+  {
+    "id": "baltpro-textile",
+    "name": "Baltpro Textile",
+    "country": "LT",
+    "city": null,
+    "location": null,
+    "website": "https://baltprotextile.eu",
+    "categories": ["home-textiles", "apparel"],
+    "products": ["linen bedding", "wool blankets", "merino clothing", "workwear"],
+    "materials": ["linen", "wool", "merino"],
+    "services": {
+      "privateLabel": true,
+      "contractManufacturing": true,
+      "prototyping": null
+    },
+    "smallBatches": true,
+    "moq": null,
+    "certifications": ["OEKO-TEX (Wollprodukte)"],
+    "sources": ["https://wonnda.com/suppliers/baltpro-textile/"],
+    "lastVerified": "2026-11",
+    "notes": "Stadt fehlt noch – auf der Website prüfen."
+  },
+  {
+    "id": "be-ge-baltic",
+    "name": "Be-Ge Baltic UAB",
+    "country": "LT",
+    "city": "Klaipėda",
+    "location": { "lat": 55.703, "lng": 21.144 },
+    "website": "https://baltic.be-ge.se",
+    "categories": ["technical-textiles", "upholstery"],
+    "products": ["seat covers", "upholstered seats"],
+    "materials": ["heavy textiles", "artificial leather", "laminated materials"],
+    "services": {
+      "privateLabel": false,
+      "contractManufacturing": true,
+      "prototyping": true
+    },
+    "smallBatches": true,
+    "moq": null,
+    "certifications": [],
+    "sources": ["https://baltic.be-ge.se"],
+    "lastVerified": "2026-11",
+    "notes": "Industrienähen für Fahrzeug- und Möbelbezüge. Eher B2B-Industrie als Konsumprodukte."
+  },
+  {
+    "id": "galvi-linda",
+    "name": "Galvi-Linda AS",
+    "country": "EE",
+    "city": "Viljandi",
+    "location": { "lat": 58.364, "lng": 25.590 },
+    "website": "https://www.galvilinda.ee",
+    "categories": ["bags", "technical-textiles"],
+    "products": ["special purpose bags", "tactical vests", "tents", "weatherproof clothing"],
+    "materials": ["technical textiles", "leather", "PVC"],
+    "services": {
+      "privateLabel": null,
+      "contractManufacturing": true,
+      "prototyping": null
+    },
+    "smallBatches": null,
+    "moq": null,
+    "certifications": ["ISO 9001"],
+    "sources": ["https://tradewithestonia.com/wp-content/uploads/2024/02/galvi-linda-company-information.pdf"],
+    "lastVerified": "2026-11",
+    "notes": "Fertigt als Zulieferer für Firmen in DE, UK, NO, SE, FI."
+  },
+  {
+    "id": "aresken",
+    "name": "ArEsken OÜ",
+    "country": "EE",
+    "city": "Tallinn",
+    "location": { "lat": 59.436, "lng": 24.743 },
+    "website": "https://aresken.ee",
+    "categories": ["apparel", "bags", "home-textiles"],
+    "products": ["uniforms", "textile packaging", "gift bags", "home textiles"],
+    "materials": [],
+    "services": {
+      "privateLabel": null,
+      "contractManufacturing": true,
+      "prototyping": null
+    },
+    "smallBatches": true,
+    "moq": null,
+    "certifications": [],
+    "sources": ["https://www.newclothmarketonline.com/profiles/aresken-ou-estonia-profile/"],
+    "lastVerified": "2026-11",
+    "notes": "Kleine Nähwerkstatt in der Altstadt, Kleinserien für Firmen."
+  }
+]

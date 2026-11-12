@@ -8,9 +8,10 @@
 
 <script>
 import * as maplibregl from 'maplibre-gl';
-import { NavigationControl } from 'maplibre-gl';
+import { NavigationControl, Marker, Popup } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css'
 import { shallowRef, onMounted, onUnmounted, markRaw } from 'vue';
+import suppliers from '../data/suppliers.json';
 
 export default {
   name: "MapView",
@@ -31,6 +32,23 @@ export default {
       }));
 
       map.value.addControl(new NavigationControl(), 'top-right');
+
+      suppliers.forEach(supplier => {
+        if (!supplier.location) return
+
+        const { lat, lng } = supplier.location
+
+        const popup = new Popup({ offset: 25 }).setHTML(
+          `<strong>${supplier.name}</strong><br>
+           <a href="${supplier.website}" target="_blank" rel="noopener">${supplier.website}</a>`
+        )
+
+        new Marker({ color: "#FF0000" })
+          .setLngLat([lng, lat])
+          .setPopup(popup)
+          .addTo(map.value)
+      })
+
     })
 
     onUnmounted(() => {

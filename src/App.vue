@@ -27,6 +27,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#app {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100dvh;
+}
+
 code {
   font-family:
     source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;

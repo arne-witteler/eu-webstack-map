@@ -7,9 +7,8 @@
 </template>
 
 <script>
-import * as maplibregl from 'maplibre-gl';
-import { NavigationControl, Marker, Popup } from 'maplibre-gl';
-import 'maplibre-gl/dist/maplibre-gl.css'
+import { Map as MapLibreMap, NavigationControl, Marker, Popup } from 'maplibre-gl';
+import 'maplibre-gl/dist/maplibre-gl.css';
 import { shallowRef, onMounted, onUnmounted, markRaw } from 'vue';
 import suppliers from '../data/suppliers.json';
 
@@ -24,9 +23,9 @@ export default {
 
       const initialState = { lng: 10, lat: 50, zoom: 3.5 };
 
-      map.value = markRaw(new maplibregl.Map({
+      map.value = markRaw(new MapLibreMap({
         container: mapContainer.value,
-        style: `https://api.maptiler.com/maps/streets-v4/style.json?key=${apiKey}`,
+        style: `https://api.maptiler.com/maps/01a1d029-0f3b-7358-971e-387ed5eb053f/style.json?key=${apiKey}`,
         center: [initialState.lng, initialState.lat],
         zoom: initialState.zoom
       }));
@@ -38,10 +37,22 @@ export default {
 
         const { lat, lng } = supplier.location
 
-        const popup = new Popup({ offset: 25 }).setHTML(
-          `<strong>${supplier.name}</strong><br>
-           <a href="${supplier.website}" target="_blank" rel="noopener">${supplier.website}</a>`
-        )
+        const content = document.createElement('div')
+
+        const name = document.createElement('strong')
+        name.textContent = supplier.name
+        content.append(name)
+
+        if (supplier.website) {
+          const link = document.createElement('a')
+          link.href = supplier.website
+          link.target = '_blank'
+          link.rel = 'noopener'
+          link.textContent = supplier.website
+          content.append(document.createElement('br'), link)
+        }
+
+        const popup = new Popup({ offset: 25 }).setDOMContent(content)
 
         new Marker({ color: "#FF0000" })
           .setLngLat([lng, lat])
@@ -66,7 +77,7 @@ export default {
 .map-wrap {
   position: relative;
   width: 100%;
-  height: calc(100vh - 77px);
+  height: 100%;
 }
 
 .map {
